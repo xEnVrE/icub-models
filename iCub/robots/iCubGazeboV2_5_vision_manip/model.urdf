@@ -1627,25 +1627,27 @@
     <limit effort="50000" lower="-1.3962634016" upper="0.436332312999" velocity="50000"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="r_hand">
+<link name="r_hand">
+    <!-- This must be revised -->
     <inertial>
-      <origin xyz="-0.064668163717 0.0056002 0.0226812940918" rpy="0 0 0"/>
-      <mass value="0.248289"/>
-      <inertia ixx="0.01" ixy="-2.3536e-06" ixz="3.61526e-05" iyy="0.01" iyz="2.07146e-05" izz="0.01"/>
+    <origin xyz="-0.064668163717 0.0056002 0.0226812940918" rpy="0 0 0"/>
+    <mass value="0.248289"/>
+    <inertia ixx="0.01" ixy="-2.3536e-06" ixz="3.61526e-05" iyy="0.01" iyz="2.07146e-05" izz="0.01"/>
     </inertial>
+    <!-- -->
     <visual>
-      <origin xyz="0.399758069749 0.0194929 -0.107114822834" rpy="0 0 0"/>
+      <origin xyz="0.00271606739979117 -0.00155679999998751 -0.00248235390712302" rpy="-1.57079632679979 0.261799319827 2.0696157436707e-13"/>
       <geometry>
-        <mesh filename="package://iCub/meshes/simmechanics/sim_sea_2-5_r_hand_prt-binary.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iCub/meshes/hand/full_RightHandPalm.obj" scale="1.0 1.0 1.0"/>
       </geometry>
       <material name="blue">
         <color rgba="0 0 1 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0.399758069749 0.0194929 -0.107114822834" rpy="0 0 0"/>
+      <origin xyz="0.00271606739979117 -0.00155679999998751 -0.00248235390712302" rpy="-1.57079632679979 0.261799319827 2.0696157436707e-13"/>
       <geometry>
-        <mesh filename="package://iCub/meshes/simmechanics/sim_sea_2-5_r_hand_prt-binary.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iCub/meshes/hand/full_RightHandPalm.obj" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
   </link>
@@ -2054,18 +2056,33 @@
       <inertia ixx="0.01" ixy="2.96453e-06" ixz="-3.68906e-05" iyy="0.01" iyz="2.06885e-05" izz="0.01"/>
     </inertial>
     <visual>
-      <origin xyz="-0.399680424055 0.0194929 -0.107404600587" rpy="0 0 0"/>
+      <origin xyz="-0.00271606739980213 -0.0015568 -0.00248235390708518" rpy="1.57079632679979 -0.261799319827 3.32244804390038e-17"/>
       <geometry>
-        <mesh filename="package://iCub/meshes/simmechanics/sim_sea_2-5_l_hand_prt-binary.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iCub/meshes/hand/full_LeftHandPalm.obj" scale="1.0 1.0 1.0"/>
       </geometry>
-      <material name="gray">
-        <color rgba="0.5 0.5 0.5 1"/>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0576542978428 -0.0055568 0.0136938323083" rpy="-1.57079632679 -0.261799319827 5.74693715701688e-17"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftTopCover.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.399680424055 0.0194929 -0.107404600587" rpy="0 0 0"/>
+      <origin xyz="-0.00271606739980213 -0.0015568 -0.00248235390708518" rpy="1.57079632679979 -0.261799319827 3.32244804390038e-17"/>
       <geometry>
-        <mesh filename="package://iCub/meshes/simmechanics/sim_sea_2-5_l_hand_prt-binary.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iCub/meshes/hand/full_LeftHandPalm.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.0576542978428 -0.0055568 0.0136938323083" rpy="-1.57079632679 -0.261799319827 5.74693715701688e-17"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftTopCover.obj" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
   </link>
