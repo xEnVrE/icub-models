@@ -2884,13 +2884,31 @@
 <plugin name="controlboard_head_without_eyes" filename="libgazebo_yarp_controlboard.so">
   <yarpConfigurationFile>model://iCub/conf/gazebo_icub_head_without_eyes.ini</yarpConfigurationFile>
 </plugin>
-<plugin name="controlboard_left_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_arm_no_hand_for_no_hand_model.ini</yarpConfigurationFile>
-  <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
-</plugin>
 <plugin name="controlboard_right_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
   <yarpConfigurationFile>model://iCub/conf/gazebo_icub_right_arm_no_hand_for_no_hand_model.ini</yarpConfigurationFile>
   <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
+</plugin>
+<plugin name='controlboard_left_hand_thumb' filename='libgazebo_yarp_controlboard.so'>
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_thumb.ini</yarpConfigurationFile>
+</plugin>
+<plugin name='controlboard_left_hand_index' filename='libgazebo_yarp_controlboard.so'>
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_index.ini</yarpConfigurationFile>
+</plugin>
+<plugin name='controlboard_left_hand_middle' filename='libgazebo_yarp_controlboard.so'>
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_middle.ini</yarpConfigurationFile>
+</plugin>
+<plugin name='controlboard_left_hand_pinky' filename='libgazebo_yarp_controlboard.so'>
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_pinky.ini</yarpConfigurationFile>
+</plugin>
+<plugin name='controlboard_left_hand_finger' filename='libgazebo_yarp_controlboard.so'>
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_finger.ini</yarpConfigurationFile>
+</plugin>
+<plugin name="controlboard_left_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_arm_no_hand.ini</yarpConfigurationFile>
+  <initialConfiguration>-0.52 0.52 0 0.785 0 0 0.0</initialConfiguration>
+</plugin>
+<plugin name="controlboard_left_arm" filename="libgazebo_yarp_controlboard.so">
+  <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
 </plugin>
 </gazebo>
   <gazebo reference="r_hip_pitch">
