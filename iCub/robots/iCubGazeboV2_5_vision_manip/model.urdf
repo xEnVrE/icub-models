@@ -2094,12 +2094,619 @@
     <limit effort="50000" lower="-0.349065850399" upper="0.436332312999" velocity="50000"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="l_hand_dh_frame"/>
-  <joint name="l_hand_dh_frame_fixed_joint" type="fixed">
+  <link name="l_hand_dh_frame">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+  </link>
+  <joint name="l_hand_dh_frame_fixed_joint" type="revolute">
     <origin xyz="0.0576542978428 -0.0055568 0.0136938323083" rpy="-1.57079632679 -0.261799319827 0"/>
+    <axis xyz="0.0 0.0 1.0"/>
     <parent link="l_hand"/>
     <child link="l_hand_dh_frame"/>
-    <dynamics damping="0.1"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
+  <link name="l_hand_thumb_0">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_thumb_0_joint" type="revolute">
+    <origin xyz="-0.0235 -0.012 0.0015" rpy="1.6435245522555 -3.10126979642577 2.07617279145347"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_dh_frame"/>
+    <child link="l_hand_thumb_0"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_thumb_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_thumb_1_joint" type="revolute">
+    <origin xyz="0.0211 0.0049 -3.00038465791102e-19" rpy="1.5707963267949 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_thumb_0"/>
+    <child link="l_hand_thumb_1"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_thumb_2">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_thumb_2_joint" type="revolute">
+    <origin xyz="0.026 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_thumb_1"/>
+    <child link="l_hand_thumb_2"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_thumb_3">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265358979 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265358979 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftThumb3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_thumb_3_joint" type="revolute">
+    <origin xyz="0.022 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_thumb_2"/>
+    <child link="l_hand_thumb_3"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_index_0">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_index_0_joint" type="revolute">
+    <origin xyz="0.00175 -0.02622 0.0107" rpy="0.0870442565935125 3.13536120039556 3.07030553260709"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_dh_frame"/>
+    <child link="l_hand_index_0"/>
+    <limit effort="50000" lower="0.0" upper="0.3490658503988659" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_index_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_index_1_joint" type="revolute">
+    <origin xyz="0.0148 -0.00175 1.07156594925393e-19" rpy="1.5707963267949 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_index_0"/>
+    <child link="l_hand_index_1"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_index_2">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_index_2_joint" type="revolute">
+    <origin xyz="0.0259 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_index_1"/>
+    <child link="l_hand_index_2"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_index_3">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftIndex3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_index_3_joint" type="revolute">
+    <origin xyz="0.022 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_index_2"/>
+    <child link="l_hand_index_3"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_middle_0">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 1.5707963267949"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 1.5707963267949"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_middle_0_joint" type="revolute">
+    <origin xyz="0.0025 -0.00977 0.0116" rpy="3.14159265358979 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_dh_frame"/>
+    <child link="l_hand_middle_0"/>
+    <limit effort="50000" lower="0.0" upper="0.3490658503988659" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_middle_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_middle_1_joint" type="revolute">
+    <origin xyz="0.0153 -0.0022 1.34711147906209e-19" rpy="1.5707963267949 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_middle_0"/>
+    <child link="l_hand_middle_1"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_middle_2">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_middle_2_joint" type="revolute">
+    <origin xyz="0.0258 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_middle_1"/>
+    <child link="l_hand_middle_2"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_middle_3">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftMiddle3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_middle_3_joint" type="revolute">
+    <origin xyz="0.024 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_3"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_ring_0">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_ring_0_joint" type="revolute">
+    <origin xyz="0.00163000000000001 0.00565 0.011" rpy="-3.13229601984498 0.0867711076126969  0.106868680136788"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_dh_frame"/>
+    <child link="l_hand_ring_0"/>
+    <limit effort="50000" lower="0.0" upper="0.3490658503988659" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_ring_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="1.5707963267949 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="1.5707963267949 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_ring_1_joint" type="revolute">
+    <origin xyz=" 0.0148 -0.00175 1.07156594925393e-19" rpy="1.5707963267949 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_ring_0"/>
+    <child link="l_hand_ring_1"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_ring_2">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_ring_2_joint" type="revolute">
+    <origin xyz="0.0259 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_ring_1"/>
+    <child link="l_hand_ring_2"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_ring_3">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftRing3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_ring_3_joint" type="revolute">
+    <origin xyz="0.022 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_3"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_little_0">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-3.14159265358979 -1.5707963267949 1.5707963267949"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="-3.14159265358979 -1.5707963267949 1.5707963267949"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle0.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_little_0_joint" type="revolute">
+    <origin xyz="-0.000390000000000001 0.02454 0.01" rpy="-3.13229601984498  0.0867711076126969 0.106868680136788"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_dh_frame"/>
+    <child link="l_hand_little_0"/>
+    <limit effort="50000" lower="0.0" upper="0.3490658503988659" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_little_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265358979 1.5707963267949"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265358979 1.5707963267949"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_little_1_joint" type="revolute">
+    <origin xyz="0.0148 0.00175 -1.07156594925393e-19" rpy="1.5707963267949 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_little_0"/>
+    <child link="l_hand_little_1"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_little_2">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_little_2_joint" type="revolute">
+    <origin xyz="0.0219 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_little_1"/>
+    <child link="l_hand_little_2"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_little_3">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
+      <geometry>
+        <mesh filename="package://iCub/meshes/hand/full_LeftLittle3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="l_hand_little_3_joint" type="revolute">
+    <origin xyz="0.019 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_little_2"/>
+    <child link="l_hand_little_3"/>
+    <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
+    <dynamics friction="0.0"/>
   </joint>
   <link name="neck_1">
     <inertial>
