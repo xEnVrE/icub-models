@@ -155,7 +155,13 @@
     <limit effort="37.0" lower="-1.3962634016" upper="1.3962634016" velocity="7.64"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="r_upper_leg_dh_frame"/>
+  <link name="r_upper_leg_dh_frame">
+      <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="r_upper_leg_dh_frame_fixed_joint" type="fixed">
     <origin xyz="0 0 -0.145825" rpy="1.57079632679 0 0"/>
     <parent link="r_upper_leg"/>
@@ -398,7 +404,13 @@
     <limit effort="37.0" lower="-1.3962634016" upper="1.3962634016" velocity="7.64"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="l_upper_leg_dh_frame"/>
+  <link name="l_upper_leg_dh_frame">
+      <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="l_upper_leg_dh_frame_fixed_joint" type="fixed">
     <origin xyz="0 0 -0.145825" rpy="1.57079632679 0 0"/>
     <parent link="l_upper_leg"/>
@@ -791,7 +803,13 @@
     <limit effort="50000" lower="-1.0471975512" upper="1.0471975512" velocity="50000"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="r_forearm_dh_frame"/>
+  <link name="r_forearm_dh_frame">
+      <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="r_forearm_dh_frame_fixed_joint" type="fixed">
     <origin xyz="-0.102871102373 7.00000000002e-06 0.0275642213111" rpy="-0.261799319827 0 -1.57079632679"/>
     <parent link="r_forearm"/>
@@ -1650,7 +1668,13 @@
     <limit effort="50000" lower="-1.0471975512" upper="1.0471975512" velocity="50000"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="l_forearm_dh_frame"/>
+  <link name="l_forearm_dh_frame">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="l_forearm_dh_frame_fixed_joint" type="fixed">
     <origin xyz="0.102871102373 7.00000000002e-06 0.0275642213111" rpy="2.87979333376 0 1.57079632679"/>
     <parent link="l_forearm"/>
@@ -2436,14 +2460,26 @@
     <limit effort="50000" lower="-0.872664625997" upper="0.872664625997" velocity="50000"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
-  <link name="l_foot_dh_frame"/>
+  <link name="l_foot_dh_frame">
+      <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="l_foot_dh_frame_fixed_joint" type="fixed">
   <origin xyz="0.0 0 0.004" rpy="0 1.5708 0"/>
   <axis xyz="0 0 0"/>
   <parent link="l_foot"/>
   <child link="l_foot_dh_frame"/>
-</joint>
-  <link name="r_foot_dh_frame"/>
+  </joint>
+  <link name="r_foot_dh_frame">
+      <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
   <joint name="r_foot_dh_frame_fixed_joint" type="fixed">
   <origin xyz="0.0 0 0.004" rpy="0 1.5708 0"/>
   <axis xyz="0 0 0"/>
