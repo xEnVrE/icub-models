@@ -1010,6 +1010,20 @@
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
   </joint>
+  <link name="r_hand_thumb_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="r_hand_thumb_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
   <link name="r_hand_index_0">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -1129,6 +1143,20 @@
     <child link="r_hand_index_3"/>
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
+  </joint>
+  <link name="r_hand_index_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="r_hand_index_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
   </joint>
   <link name="r_hand_middle_0">
     <inertial>
@@ -1250,6 +1278,20 @@
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
   </joint>
+  <link name="r_hand_middle_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="r_hand_middle_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="r_hand_middle_3"/>
+    <child link="r_hand_middle_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
   <link name="r_hand_ring_0">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
@@ -1370,6 +1412,20 @@
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
   </joint>
+  <link name="r_hand_ring_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="r_hand_ring_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="r_hand_ring_3"/>
+    <child link="r_hand_ring_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
   <link name="r_hand_little_0">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
@@ -1489,6 +1545,20 @@
     <child link="r_hand_little_3"/>
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
+  </joint>
+  <link name="r_hand_little_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="r_hand_little_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="r_hand_little_3"/>
+    <child link="r_hand_little_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
   </joint>
   <link name="l_shoulder_1">
     <inertial>
@@ -1890,6 +1960,20 @@
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
   </joint>
+  <link name="l_hand_thumb_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="l_hand_thumb_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
   <link name="l_hand_index_0">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -2009,6 +2093,20 @@
     <child link="l_hand_index_3"/>
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_index_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="l_hand_index_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
   </joint>
   <link name="l_hand_middle_0">
     <inertial>
@@ -2130,6 +2228,20 @@
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
   </joint>
+  <link name="l_hand_middle_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="l_hand_middle_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_middle_3"/>
+    <child link="l_hand_middle_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
   <link name="l_hand_ring_0">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -2250,6 +2362,20 @@
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
   </joint>
+  <link name="l_hand_ring_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="l_hand_ring_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_ring_3"/>
+    <child link="l_hand_ring_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
+  </joint>
   <link name="l_hand_little_0">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -2369,6 +2495,20 @@
     <child link="l_hand_little_3"/>
     <limit effort="50000" lower="0.0" upper="1.5707963267948966" velocity="50000"/>
     <dynamics friction="0.0"/>
+  </joint>
+  <link name="l_hand_little_tip">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="l_hand_little_tip_joint" type="revolute">
+    <origin xyz="0.0168 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="l_hand_little_3"/>
+    <child link="l_hand_little_tip"/>
+    <limit effort="50000" lower="0.0" upper="0.0" velocity="50000"/>
   </joint>
   <link name="neck_1">
     <inertial>
