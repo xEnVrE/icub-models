@@ -2633,6 +2633,76 @@
     <limit effort="50000" lower="-0.872664625997" upper="0.872664625997" velocity="50000"/>
     <dynamics damping="1.0" friction="0.0"/>
   </joint>
+  <link name="eyes_tilt_frame">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  <joint name="eyes_tilt" type="revolute">
+    <origin xyz="1.90392435799427e-10 0.104896999999692 0.0455907000018309" rpy="-2.35618706953753 1.57079632678797 0.785405584052268"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="head"/>
+    <child link="eyes_tilt_frame"/>
+    <limit effort="50000" lower="-0.5235987755982988" upper="0.5235987755982988" velocity="50000"/>
+  </joint>
+  <link name="l_eye">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0 0.0 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.001" radius="0.008"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="l_eye_pan_joint" type="revolute">
+    <origin xyz="0.0 0.0 -0.034" rpy="0.0 -1.5707963267949 0.0"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <parent link="eyes_tilt_frame"/>
+    <child link="l_eye"/>
+    <limit effort="50000" lower="-0.5235987755982988" upper="0.9599310885968813" velocity="50000"/>
+  </joint>
+  <link name="r_eye">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0 0.0 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.001" radius="0.008"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="r_eye_pan_joint" type="revolute">
+    <origin xyz="0.0 0.0 0.034" rpy="0.0 -1.5707963267949 0.0"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <parent link="eyes_tilt_frame"/>
+    <child link="r_eye"/>
+    <limit effort="50000" lower="-0.9599310885968813" upper="0.5235987755982988" velocity="50000"/>
+  </joint>
   <link name="l_foot_dh_frame">
       <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
@@ -2721,8 +2791,8 @@
   <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
     <yarpConfigurationFile>model://iCub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
   </plugin>
-  <plugin name="controlboard_head_without_eyes" filename="libgazebo_yarp_controlboard.so">
-    <yarpConfigurationFile>model://iCub/conf/gazebo_icub_head_without_eyes.ini</yarpConfigurationFile>
+  <plugin name="controlboard_head" filename="libgazebo_yarp_controlboard.so">
+    <yarpConfigurationFile>model://iCub/conf/gazebo_icub_head.ini</yarpConfigurationFile>
   </plugin>
   <plugin name='controlboard_left_hand_thumb' filename='libgazebo_yarp_controlboard.so'>
     <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_thumb.ini</yarpConfigurationFile>
