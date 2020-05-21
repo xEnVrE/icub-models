@@ -2266,7 +2266,7 @@
   </link>
   <joint name="l_hand_ring_0_joint" type="revolute">
     <origin xyz="0.00163000000000001 0.00565 0.011" rpy="-3.13229601984498 0.0867711076126969  0.106868680136788"/>
-    <axis xyz="0.0 0.0 1.0"/>
+    <axis xyz="0.0 0.0 -1.0"/>
     <parent link="l_hand_dh_frame"/>
     <child link="l_hand_ring_0"/>
     <limit effort="50000" lower="0.0" upper="0.3490658503988659" velocity="50000"/>
@@ -2400,7 +2400,7 @@
   </link>
   <joint name="l_hand_little_0_joint" type="revolute">
     <origin xyz="-0.000390000000000001 0.02454 0.01" rpy="-3.13229601984498  0.0867711076126969 0.106868680136788"/>
-    <axis xyz="0.0 0.0 1.0"/>
+    <axis xyz="0.0 0.0 -1.0"/>
     <parent link="l_hand_dh_frame"/>
     <child link="l_hand_little_0"/>
     <limit effort="50000" lower="0.0" upper="0.3490658503988659" velocity="50000"/>
