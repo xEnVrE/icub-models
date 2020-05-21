@@ -2699,6 +2699,7 @@
   </plugin>
   <plugin name='controlboard_left_hand_finger' filename='libgazebo_yarp_controlboard.so'>
     <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_hand_finger.ini</yarpConfigurationFile>
+    <initialConfiguration>1.0471975511965976</initialConfiguration>
   </plugin>
   <plugin name="controlboard_left_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
     <yarpConfigurationFile>model://iCub/conf/gazebo_icub_left_arm_no_hand.ini</yarpConfigurationFile>
@@ -2721,6 +2722,7 @@
   </plugin>
   <plugin name='controlboard_right_hand_finger' filename='libgazebo_yarp_controlboard.so'>
     <yarpConfigurationFile>model://iCub/conf/gazebo_icub_right_hand_finger.ini</yarpConfigurationFile>
+    <initialConfiguration>1.0471975511965976</initialConfiguration>
   </plugin>
   <plugin name="controlboard_right_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
     <yarpConfigurationFile>model://iCub/conf/gazebo_icub_right_arm_no_hand.ini</yarpConfigurationFile>
