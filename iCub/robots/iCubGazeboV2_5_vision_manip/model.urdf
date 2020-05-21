@@ -906,6 +906,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265359 1.57079632679"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightThumb0.obj" scale="1.0 1.0 1.0"/>
@@ -936,6 +937,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightThumb1.obj" scale="1.0 1.0 1.0"/>
@@ -966,6 +968,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightThumb2.obj" scale="1.0 1.0 1.0"/>
@@ -996,6 +999,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightThumb3.obj" scale="1.0 1.0 1.0"/>
@@ -1040,6 +1044,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightIndex0.obj" scale="1.0 1.0 1.0"/>
@@ -1070,6 +1075,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightIndex1.obj" scale="1.0 1.0 1.0"/>
@@ -1100,6 +1106,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightIndex2.obj" scale="1.0 1.0 1.0"/>
@@ -1130,6 +1137,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightIndex3.obj" scale="1.0 1.0 1.0"/>
@@ -1174,6 +1182,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0035" rpy="0.0 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightMiddle0.obj" scale="1.0 1.0 1.0"/>
@@ -1204,6 +1213,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightMiddle1.obj" scale="1.0 1.0 1.0"/>
@@ -1234,6 +1244,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightMiddle2.obj" scale="1.0 1.0 1.0"/>
@@ -1264,6 +1275,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightMiddle3.obj" scale="1.0 1.0 1.0"/>
@@ -1308,6 +1320,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightRing0.obj" scale="1.0 1.0 1.0"/>
@@ -1338,6 +1351,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightRing1.obj" scale="1.0 1.0 1.0"/>
@@ -1368,6 +1382,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightRing2.obj" scale="1.0 1.0 1.0"/>
@@ -1398,6 +1413,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightRing3.obj" scale="1.0 1.0 1.0"/>
@@ -1442,6 +1458,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0038" rpy="0.0 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightLittle0.obj" scale="1.0 1.0 1.0"/>
@@ -1472,6 +1489,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightLittle1.obj" scale="1.0 1.0 1.0"/>
@@ -1502,6 +1520,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightLittle2.obj" scale="1.0 1.0 1.0"/>
@@ -1532,6 +1551,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_RightLittle3.obj" scale="1.0 1.0 1.0"/>
@@ -1850,6 +1870,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftThumb0.obj" scale="1.0 1.0 1.0"/>
@@ -1880,6 +1901,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftThumb1.obj" scale="1.0 1.0 1.0"/>
@@ -1910,6 +1932,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftThumb2.obj" scale="1.0 1.0 1.0"/>
@@ -1940,6 +1963,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265358979 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftThumb3.obj" scale="1.0 1.0 1.0"/>
@@ -1984,6 +2008,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftIndex0.obj" scale="1.0 1.0 1.0"/>
@@ -2014,6 +2039,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftIndex1.obj" scale="1.0 1.0 1.0"/>
@@ -2044,6 +2070,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftIndex2.obj" scale="1.0 1.0 1.0"/>
@@ -2074,6 +2101,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftIndex3.obj" scale="1.0 1.0 1.0"/>
@@ -2148,6 +2176,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftMiddle1.obj" scale="1.0 1.0 1.0"/>
@@ -2178,6 +2207,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftMiddle2.obj" scale="1.0 1.0 1.0"/>
@@ -2208,6 +2238,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftMiddle3.obj" scale="1.0 1.0 1.0"/>
@@ -2252,6 +2283,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftRing0.obj" scale="1.0 1.0 1.0"/>
@@ -2282,6 +2314,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="1.5707963267949 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftRing1.obj" scale="1.0 1.0 1.0"/>
@@ -2312,6 +2345,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftRing2.obj" scale="1.0 1.0 1.0"/>
@@ -2342,6 +2376,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftRing3.obj" scale="1.0 1.0 1.0"/>
@@ -2386,6 +2421,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="-3.14159265358979 -1.5707963267949 1.5707963267949"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftLittle0.obj" scale="1.0 1.0 1.0"/>
@@ -2416,6 +2452,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 3.14159265358979 1.5707963267949"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/full_LeftLittle1.obj" scale="1.0 1.0 1.0"/>
@@ -2446,6 +2483,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftLittle2.obj" scale="1.0 1.0 1.0"/>
@@ -2476,6 +2514,7 @@
       </material>
     </visual>
     <collision>
+      <max_contacts>1</max_contacts>
       <origin xyz="0.0 0.0 0.0" rpy="3.14159265358979 0.0 3.14159265358979"/>
       <geometry>
         <mesh filename="package://iCub/meshes/hand/col_LeftLittle3.obj" scale="1.0 1.0 1.0"/>
