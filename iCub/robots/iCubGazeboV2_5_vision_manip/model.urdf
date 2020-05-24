@@ -2654,6 +2654,7 @@
       <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
     </inertial>
     <visual>
+      <origin xyz="0.0 0.0 0.01" rpy="0.0 0.0 0.0"/>
       <geometry>
         <sphere radius="0.02"/>
       </geometry>
@@ -2662,9 +2663,9 @@
       </material>
     </visual>
     <visual>
-      <origin xyz="0.0 0.0 0.02" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 0.03" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.001" radius="0.008"/>
+        <cylinder length="0.001" radius="0.005"/>
       </geometry>
     </visual>
   </link>
@@ -2682,6 +2683,7 @@
       <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
     </inertial>
     <visual>
+      <origin xyz="0.0 0.0 0.01" rpy="0.0 0.0 0.0"/>
       <geometry>
         <sphere radius="0.02"/>
       </geometry>
@@ -2690,9 +2692,9 @@
       </material>
     </visual>
     <visual>
-      <origin xyz="0.0 0.0 0.02" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 0.03" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.001" radius="0.008"/>
+        <cylinder length="0.001" radius="0.005"/>
       </geometry>
     </visual>
   </link>
