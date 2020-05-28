@@ -2939,6 +2939,126 @@
 <gazebo reference="neck_yaw">
    <implicitSpringDamper>1</implicitSpringDamper>
 </gazebo>
+<gazebo reference="r_hand_thumb_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="r_hand_index_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="r_hand_middle_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="r_hand_ring_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="r_hand_little_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="l_hand_thumb_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="l_hand_index_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="l_hand_middle_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="l_hand_ring_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
+<gazebo reference="l_hand_little_3">
+  <collision>
+    <surface>
+      <friction>
+        <ode>
+          <mu>5.0</mu>
+          <mu2>5.0</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+</gazebo>
 <gazebo reference="l_eye">
   <sensor name="left_camera_rgb" type="camera">
     <pose>0.0 0.0 0.0 0.0 -1.57 1.57</pose>
