@@ -1,4 +1,8 @@
 <robot name="iCub">
+  <mujoco>
+    <compiler meshdir="../../../iCub/meshes/simmechanics/" balanceinertia="false" discardvisual="false" />
+  </mujoco>
+
   <link name="world"/>
   <link name="root_link">
     <inertial>
